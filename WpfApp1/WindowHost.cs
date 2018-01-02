@@ -38,10 +38,10 @@ namespace WpfApp1
             wrapper.DestroyHostedWindow(hwnd.Handle);
         }
 
-        public void Redraw()
+        public void Effect()
         {
             if (wrapper == null) return;
-            wrapper.Redraw();
+            wrapper.Effect();
         }
     }
 }

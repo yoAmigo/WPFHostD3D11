@@ -11,7 +11,7 @@ namespace WpfApp1
     {
         public string Name { get; } = "Host D3DWindow";
 
-        public class RedrawCommand : ICommand
+        public class TestCommand : ICommand
         {
             public event EventHandler CanExecuteChanged;
 
@@ -22,9 +22,11 @@ namespace WpfApp1
 
             public void Execute(object parameter)
             {
-                WindowHost.GetInstance().Redraw();
+                var wndHost = WindowHost.GetInstance();
+                if (wndHost == null) return;
+                wndHost.Effect();
             }
         }
-        public RedrawCommand MyRedraw { private set; get; } = new RedrawCommand();
+        public TestCommand MyTest { private set; get; } = new TestCommand();
     }
 }
