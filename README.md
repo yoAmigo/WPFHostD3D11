@@ -6,5 +6,5 @@ at this time, change step-1's execution project to cli-classlibrary.
 and then, add reference for the cli-classlibrary to wpf(C#) project.
 
 # References
-* [d3d-shader compile]: http://www-fps.nifs.ac.jp/ito/memo/        "Ito-san memo"
-* [d3d rendering setup process]: http://yun.cup.com/directx11.html "Nanashi-soft-san info"
+* [d3d-shader compile](http://www-fps.nifs.ac.jp/ito/memo/) Ito-san memo
+* [d3d rendering setup process](http://yun.cup.com/directx11.html) Nanashi-soft-san info
