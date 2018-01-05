@@ -76,6 +76,7 @@
     </ApplicationDefinition>
     <Compile Include="MyViewModel.cs" />
     <Compile Include="WindowHost.cs" />
+    <Compile Include="WindowHost2.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -119,6 +120,10 @@
     <ProjectReference Include="..\WindowsProject1\WindowsProject1.vcxproj">
       <Project>{c4210055-07b6-4413-92c5-3279b098297a}</Project>
       <Name>WindowsProject1</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WindowsProject2\WindowsProject2.vcxproj">
+      <Project>{e5d5c906-6f1b-4914-a7cd-fae40be56b82}</Project>
+      <Name>WindowsProject2</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

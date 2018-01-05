@@ -13,6 +13,9 @@
         <Border BorderBrush="Black" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="320" Height="240">
             <local:WindowHost/>
         </Border>
-        <Button x:Name="EffectTest" Content="{Binding Name, RelativeSource={RelativeSource Self}}" HorizontalAlignment="Left" Margin="325,10,0,0" VerticalAlignment="Top" Command="{Binding MyTest}"/>
+        <Button x:Name="EffectTest" Content="{Binding Name, RelativeSource={RelativeSource Self}}" HorizontalAlignment="Left" Margin="10,245,0,0" VerticalAlignment="Top" Command="{Binding MyTest}"/>
+        <Border BorderBrush="Black" BorderThickness="0" HorizontalAlignment="Left" Height="240" Margin="325,0,0,0" VerticalAlignment="Top" Width="182">
+            <local:WindowHost2/>
+        </Border>
     </Grid>
 </Window>
