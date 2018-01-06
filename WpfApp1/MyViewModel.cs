@@ -24,7 +24,7 @@ namespace WpfApp1
             {
                 var wndHost = WindowHost.GetInstance();
                 if (wndHost == null) return;
-                wndHost.Effect();
+                wndHost.SimpleEffect();
             }
         }
         public TestCommand MyTest { private set; get; } = new TestCommand();

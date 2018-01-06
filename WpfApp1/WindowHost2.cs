@@ -9,21 +9,13 @@ using System.Windows.Controls;
 
 namespace WpfApp1
 {
-    using ClassLibrary1;
-    class WindowHost : HwndHost
+    using ClassLibrary2;
+    class WindowHost2 : HwndHost
     {
-        static WindowHost instance;
-        public static WindowHost GetInstance() { return instance; }
+        static WindowHost2 instance;
+        public static WindowHost2 GetInstance() { return instance; }
 
-        Class1 wrapper = new Class1();
-
-        public  WindowHost()
-        {
-            wrapper = new Class1();
-            if (instance == null) instance = this;
-        }
-
-        ~WindowHost() { instance = null; }
+        Class2 wrapper = new Class2();
 
         protected override HandleRef BuildWindowCore(HandleRef hwndParent)
         {
@@ -36,12 +28,6 @@ namespace WpfApp1
         {
             if (wrapper == null) return;
             wrapper.DestroyHostedWindow(hwnd.Handle);
-        }
-
-        public void SimpleEffect()
-        {
-            if (wrapper == null) return;
-            wrapper.Effect();
         }
     }
 }
