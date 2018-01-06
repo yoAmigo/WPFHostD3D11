@@ -56,5 +56,8 @@
     <None Include="simpleVertex.shader">
       <Filter>リソース ファイル</Filter>
     </None>
+    <None Include="simpleGeometory.shader">
+      <Filter>リソース ファイル</Filter>
+    </None>
   </ItemGroup>
 </Project>

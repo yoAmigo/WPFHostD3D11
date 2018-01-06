@@ -177,8 +177,15 @@ copy C:\glew-2.1.0\bin\Release\Win32\glew32.dll $(OutDir)</Command>
     <Image Include="WindowsProject2.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="simpleFragment.shader" />
-    <None Include="simpleVertex.shader" />
+    <None Include="simpleFragment.shader">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="simpleGeometory.shader">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="simpleVertex.shader">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
