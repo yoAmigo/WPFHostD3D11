@@ -189,6 +189,8 @@ copy /Y "$(FrameworkSdkDir)bin\$(Platform)\glew32.dll" "$(OutDir)"</Command>
     <None Include="simpleGeometory.shader">
       <DeploymentContent>true</DeploymentContent>
     </None>
+    <None Include="simpleTessellationControl.shader" />
+    <None Include="simpleTessellationEvaluation.shader" />
     <None Include="simpleVertex.shader">
       <DeploymentContent>true</DeploymentContent>
     </None>

@@ -59,5 +59,11 @@
     <None Include="simpleGeometory.shader">
       <Filter>リソース ファイル</Filter>
     </None>
+    <None Include="simpleTessellationControl.shader">
+      <Filter>リソース ファイル</Filter>
+    </None>
+    <None Include="simpleTessellationEvaluation.shader">
+      <Filter>リソース ファイル</Filter>
+    </None>
   </ItemGroup>
 </Project>

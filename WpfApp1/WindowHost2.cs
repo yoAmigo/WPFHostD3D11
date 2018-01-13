@@ -12,7 +12,7 @@ namespace WpfApp1
     using ClassLibrary2;
     class WindowHost2 : HwndHost
     {
-        static WindowHost2 instance;
+        static WindowHost2 instance = null;
         public static WindowHost2 GetInstance() { return instance; }
 
         Class2 wrapper = new Class2();
