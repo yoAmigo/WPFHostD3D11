@@ -1,0 +1,30 @@
+[Compiling Geometory Shader]0(14) : error C7011: implicit cast from "vec4" to "vec3"
+0(14) : error C1035: assignment of incompatible types
+0(17) : error C7011: implicit cast from "vec4" to "vec3"
+0(17) : error C1035: assignment of incompatible types
+0(20) : error C7011: implicit cast from "vec4" to "vec3"
+0(20) : error C1035: assignment of incompatible types
+[Compiling Geometory Shader]0(14) : error C7011: implicit cast from "vec4" to "vec3"
+0(14) : error C1035: assignment of incompatible types
+0(17) : error C7011: implicit cast from "vec4" to "vec3"
+0(17) : error C1035: assignment of incompatible types
+0(20) : error C7011: implicit cast from "vec4" to "vec3"
+0(20) : error C1035: assignment of incompatible types
+[Compiling Geometory Shader]0(14) : error C7011: implicit cast from "vec4" to "vec3"
+0(14) : error C1035: assignment of incompatible types
+0(17) : error C7011: implicit cast from "vec4" to "vec3"
+0(17) : error C1035: assignment of incompatible types
+0(20) : error C7011: implicit cast from "vec4" to "vec3"
+0(20) : error C1035: assignment of incompatible types
+[Compiling Geometory Shader]0(14) : error C7011: implicit cast from "vec4" to "vec3"
+0(14) : error C1035: assignment of incompatible types
+0(17) : error C7011: implicit cast from "vec4" to "vec3"
+0(17) : error C1035: assignment of incompatible types
+0(20) : error C7011: implicit cast from "vec4" to "vec3"
+0(20) : error C1035: assignment of incompatible types
+[Compiling Geometory Shader]0(14) : error C7011: implicit cast from "vec4" to "vec3"
+0(14) : error C1035: assignment of incompatible types
+0(17) : error C7011: implicit cast from "vec4" to "vec3"
+0(17) : error C1035: assignment of incompatible types
+0(20) : error C7011: implicit cast from "vec4" to "vec3"
+0(20) : error C1035: assignment of incompatible types
