@@ -1,6 +1,6 @@
 #version 400
 
-layout(triangles, invocations = 3) in;
+layout(triangles, invocations = 1) in;
 //layout(triangle_strip, max_vertices = 9) out;
 layout(triangle_strip, max_vertices = 3) out;
 

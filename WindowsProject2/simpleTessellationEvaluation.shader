@@ -1,3 +1,5 @@
+#version 400
+
 layout(triangles, equal_spacing, ccw) in;
 
 out vec3 tePatchDistance;
@@ -13,5 +15,5 @@ void main()
 	vec3 p2 = gl_in[2].gl_Position.xyz;
 
 	tePatchDistance = gl_TessCoord;
-	gl_Position = vec4(u * p0, v * p1, w * p2, 1.0);
+	gl_Position = vec4(u * p0 + v * p1 + w * p2, 1.0);
 }
