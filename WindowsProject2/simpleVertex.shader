@@ -1,4 +1,4 @@
-#version 330 core
+#version 400
 
 layout(location = 0) in vec3 vertexPosition_modelspace;
 out vec3 fv_color;

@@ -1,6 +1,6 @@
-#version 330 core
+#version 400
 
-layout(triangles) in;
+layout(triangles, invocations = 3) in;
 //layout(triangle_strip, max_vertices = 9) out;
 layout(triangle_strip, max_vertices = 3) out;
 
@@ -11,15 +11,24 @@ out vec3 f_color;
 void main() {
 	for (int i = 0; i < 3; i++)
 	{
-		//f_color = fv_color[2];
-		//gl_Position = gl_in[i].gl_Position + vec4(0.0, -0.1, 0.0, 0.0);
-		//EmitVertex();
-		f_color = fv_color[1];
-		gl_Position = gl_in[i].gl_Position + vec4(-0.1, 0.1, 0.0, 0.0);
-		EmitVertex();
-		//f_color = fv_color[0];
-		//gl_Position = gl_in[i].gl_Position + vec4(0.1 , 0.1, 0.0, 0.0);
-		//EmitVertex();
+		if (gl_InvocationID == 0)
+		{
+			f_color = fv_color[gl_InvocationID];
+			gl_Position = gl_in[i].gl_Position + vec4(0.0, -0.1, 0.0, 0.0);
+			EmitVertex();
+		}
+		else if (gl_InvocationID == 1)
+		{
+			f_color = fv_color[gl_InvocationID];
+			gl_Position = gl_in[i].gl_Position + vec4(-0.1, 0.1, 0.0, 0.0);
+			EmitVertex();
+		}
+		else
+		{
+			f_color = fv_color[gl_InvocationID];
+			gl_Position = gl_in[i].gl_Position + vec4(0.1, 0.1, 0.0, 0.0);
+			EmitVertex();
+		}
 		//EndPrimitive();
 	}
 	EndPrimitive();
