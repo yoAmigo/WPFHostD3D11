@@ -1,9 +1,9 @@
 #version 400
 
-in vec3 f_color;
+in vec3 gf_color;
 out vec3 color;
 
 
 void main() {
-	color = f_color;
+	color = gf_color;
 }
